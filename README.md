@@ -55,14 +55,14 @@ deliberately tiny.
 
 ## Why it exists (case study)
 
-Extracted from a larger system where a small local model was driving a real
-Game-Boy-Advance ROM port — merging one game's data onto another's engine, ~1100
+Extracted from a larger system where a small local model was driving a real porting
+effort — merging one codebase's data and features onto another's engine, ~1100
 undefined link symbols deep. The model can't hold the dependency graph or judge a
 conflict, so the hard reasoning lives here, in rules with proofs, and the model just
 asks "is this gap resolvable?" Each resolved batch was then ground-truthed by a real
-compile+link. Representative rules that fell out: metatile constants (proved by
-tileset byte-identity), donor static-data tables, donor constant headers, and a save-
-variable allocator with dead-slot reclamation.
+compile+link. Representative rules that fell out: index constants proved safe by
+byte-identity of the asset they index, donor static-data tables, donor constant
+headers, and a fixed-pool resource allocator with dead-slot reclamation.
 
 ## Try it
 
