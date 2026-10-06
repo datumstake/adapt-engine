@@ -1,6 +1,6 @@
 # adapt-engine
 
-[![ci](https://github.com/kdeibel/adapt-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/kdeibel/adapt-engine/actions/workflows/ci.yml)
+[![ci](https://github.com/datumstake/adapt-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/datumstake/adapt-engine/actions/workflows/ci.yml)
 
 A tiny engine for resolving a whole **class** of missing-symbol/porting gaps from
 declarative rules — where each rule carries its own **machine-checkable proof** that
