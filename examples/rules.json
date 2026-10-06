@@ -1,0 +1,18 @@
+{
+  "comment": "One rule: METATILE_<Tileset>_<Label> constants are copied from the donor ONLY when the tileset's metatiles.bin is byte-identical on both sides — because the constant is an index into that file, so a verbatim copy is correct exactly when the thing it indexes matches. Try editing target/tiles/sec/town/metatiles.bin and re-running the demo: the rule then refuses to resolve.",
+  "rules": [
+    {
+      "name": "metatile-labels",
+      "match": "^METATILE_([A-Za-z0-9]+)_\\w+$",
+      "find": {
+        "file": "donor/labels.h",
+        "line": "^[ \\t]*#define[ \\t]+{sym}\\b[^\\n]*"
+      },
+      "verify_identical": [
+        ["donor/tiles/*/{1.snake}/metatiles.bin",
+         "target/tiles/*/{1.target}/metatiles.bin"]
+      ],
+      "target": { "file": "target/labels.h", "insert": "before-endif" }
+    }
+  ]
+}

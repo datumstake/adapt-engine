@@ -1,0 +1,18 @@
+[project]
+name = "adapt-engine"
+version = "0.1.0"
+description = "Declarative, proof-carrying resolution of porting/missing-symbol gap classes"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["adapt_engine*"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
