@@ -1,6 +1,10 @@
 # adapt-engine
 
 [![ci](https://github.com/datumstake/adapt-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/datumstake/adapt-engine/actions/workflows/ci.yml)
+[![tests](https://img.shields.io/badge/tests-13%20passing-success)](tests)
+[![python](https://img.shields.io/badge/python-3.10%2B-blue)](pyproject.toml)
+[![dependencies](https://img.shields.io/badge/runtime%20deps-0-success)](pyproject.toml)
+[![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
 A tiny engine for resolving a whole **class** of missing-symbol/porting gaps from
 declarative rules — where each rule carries its own **machine-checkable proof** that
@@ -82,3 +86,11 @@ No third-party runtime dependencies — standard library only.
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+---
+
+Built by **[datumstake](https://github.com/datumstake)**. The rest of the set:
+
+[self-verifying-ratchet](https://github.com/datumstake/self-verifying-ratchet) — the measure-or-roll-back loop ·
+[browser-pilot](https://github.com/datumstake/browser-pilot) — the CDP browser driver ·
+[focus-three](https://github.com/datumstake/focus-three) — a one-file offline focus tool
