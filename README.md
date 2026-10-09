@@ -91,7 +91,7 @@ MIT. See [LICENSE](LICENSE).
 
 Built by **[datumstake](https://github.com/datumstake)**. The rest of the set:
 
+[ratchet](https://github.com/datumstake/ratchet) — automation that cannot grade its own work ·
+[handle](https://github.com/datumstake/handle) — a logged-in Chrome, nine verbs ·
 [pdftext](https://github.com/datumstake/pdftext) — PDF text extraction in one header file, no dependencies ·
-[self-verifying-ratchet](https://github.com/datumstake/self-verifying-ratchet) — automation that cannot grade its own work ·
-[browser-pilot](https://github.com/datumstake/browser-pilot) — a real, logged-in Chrome through a handful of one-word verbs ·
-[focus-three](https://github.com/datumstake/focus-three) — three tasks, one timer, nothing else
+[focus-three](https://github.com/datumstake/focus-three) — three tasks, one timer, nothing else — a 153 KB native Windows app
