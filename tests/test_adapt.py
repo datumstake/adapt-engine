@@ -1,4 +1,4 @@
-"""The adaptation engine (adapt_engine/adapt.py).
+"""The adaptation engine (gapsmith/adapt.py).
 
 The promise under test: a gap symbol resolves ONLY when a rule matches it, the
 donor really defines it, and the rule's stated proof holds — an unproven rule
@@ -12,7 +12,7 @@ import json
 
 import pytest
 
-from adapt_engine.adapt import apply, load_rules, resolve, targets
+from gapsmith.adapt import apply, load_rules, resolve, targets
 
 
 def make_tree(tmp_path, *, donor_bytes=b"TILESET", target_bytes=b"TILESET",

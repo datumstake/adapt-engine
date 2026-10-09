@@ -12,9 +12,9 @@ import os
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.dirname(HERE))  # repo root, for `import adapt_engine`
+sys.path.insert(0, os.path.dirname(HERE))  # repo root, for `import gapsmith`
 
-from adapt_engine.adapt import apply, load_rules, resolve  # noqa: E402
+from gapsmith.adapt import apply, load_rules, resolve  # noqa: E402
 
 
 def main() -> int:

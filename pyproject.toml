@@ -1,5 +1,5 @@
 [project]
-name = "adapt-engine"
+name = "gapsmith"
 version = "0.1.0"
 description = "Declarative, proof-carrying resolution of porting/missing-symbol gap classes"
 readme = "README.md"
@@ -11,7 +11,7 @@ dependencies = []
 dev = ["pytest"]
 
 [tool.setuptools.packages.find]
-include = ["adapt_engine*"]
+include = ["gapsmith*"]
 
 [build-system]
 requires = ["setuptools>=68"]

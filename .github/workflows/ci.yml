@@ -21,6 +21,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -e ".[dev]" ruff
       - name: Lint
-        run: ruff check --select F,E9 adapt_engine tests examples/demo.py
+        run: ruff check --select F,E9 gapsmith tests examples/demo.py
       - name: Test
         run: pytest -q

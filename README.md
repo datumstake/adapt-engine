@@ -1,6 +1,6 @@
-# adapt-engine
+# gapsmith
 
-[![ci](https://github.com/datumstake/adapt-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/datumstake/adapt-engine/actions/workflows/ci.yml)
+[![ci](https://github.com/datumstake/gapsmith/actions/workflows/ci.yml/badge.svg)](https://github.com/datumstake/gapsmith/actions/workflows/ci.yml)
 [![tests](https://img.shields.io/badge/tests-13%20passing-success)](tests)
 [![python](https://img.shields.io/badge/python-3.10%2B-blue)](pyproject.toml)
 [![dependencies](https://img.shields.io/badge/runtime%20deps-0-success)](pyproject.toml)
@@ -11,7 +11,7 @@ declarative rules — where each rule carries its own **machine-checkable proof*
 applying it is safe. No per-gap code; a new gap class is data, not a new tool.
 
 ```python
-from adapt_engine.adapt import load_rules, resolve, apply
+from gapsmith.adapt import load_rules, resolve, apply
 
 rules = load_rules("rules.json")
 a = resolve("METATILE_MauvilleGym_Switch", rules, project_root)
@@ -91,6 +91,6 @@ MIT. See [LICENSE](LICENSE).
 
 Built by **[datumstake](https://github.com/datumstake)**. The rest of the set:
 
-[self-verifying-ratchet](https://github.com/datumstake/self-verifying-ratchet) — the measure-or-roll-back loop ·
-[browser-pilot](https://github.com/datumstake/browser-pilot) — the CDP browser driver ·
-[focus-three](https://github.com/datumstake/focus-three) — a one-file offline focus tool
+[ratchet](https://github.com/datumstake/ratchet) — automation that cannot grade its own work ·
+[handle](https://github.com/datumstake/handle) — a logged-in Chrome, nine verbs ·
+[focus-three](https://github.com/datumstake/focus-three) — three tasks, one timer, nothing else

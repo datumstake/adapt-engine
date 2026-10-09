@@ -1,4 +1,4 @@
-"""adapt-engine — a gap class is a RULE, not a new tool.
+"""gapsmith — a gap class is a RULE, not a new tool.
 
 Porting one codebase onto another raises the same few shapes of missing-symbol
 gap over and over: a constant that can be copied verbatim, a data table that
@@ -33,7 +33,7 @@ from pathlib import Path
 
 #: Marks every block this engine writes, so a human (or a rollback) can see
 #: exactly what was machine-placed and under which authority.
-MARK = "// --- adapt-engine: rule-resolved definitions (each verified; see the rules file) ---"
+MARK = "// --- gapsmith: rule-resolved definitions (each verified; see the rules file) ---"
 
 
 @dataclass
